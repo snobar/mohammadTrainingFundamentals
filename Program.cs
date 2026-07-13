@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿Console.WriteLine("Calculator");
 Console.WriteLine("-------------------------------------");
 Console.WriteLine("Enter Number 1");
@@ -60,3 +61,6 @@ TimeSpan DiffrentDays = currentDateTime.Subtract(BirthDay);
 
 Console.WriteLine("Your Age In Days Is : " + DiffrentDays + " Day");
 
+=======
+﻿
+>>>>>>> origin/master
