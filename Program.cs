@@ -23,8 +23,8 @@ if(Operator == '/' && Number2 == 0)
 
 Console.WriteLine("The Result = " + Result);
 
-Console.WriteLine("-------------------------------------");
-Console.WriteLine("-------------------------------------");
+Console.WriteLine("------------------------------------");
+Console.WriteLine("------------------------------------");
 
 Console.WriteLine("JOD/USD");
 Console.WriteLine("-------------------------------------");
@@ -59,3 +59,4 @@ DateTime BirthDay = DateTime.Parse(Console.ReadLine());
 TimeSpan DiffrentDays = currentDateTime.Subtract(BirthDay);
 
 Console.WriteLine("Your Age In Days Is : " + DiffrentDays + " Day");
+
