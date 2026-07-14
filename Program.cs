@@ -38,7 +38,7 @@ Console.WriteLine("-------------------------------------");
 
 Console.WriteLine("Leap Year");
 Console.WriteLine("-------------------------------------");
-Console.Write("Enter student Mark: ");
+Console.Write("Enter Year: ");
 short Year = short.Parse(Console.ReadLine());
 
 bool IsLeapYear = (Year % 400 == 0) ? true :  (Year % 100 == 0) ? false :  (Year % 4 == 0) ? true : false;
