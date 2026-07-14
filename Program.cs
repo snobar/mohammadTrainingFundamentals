@@ -53,3 +53,26 @@ switch(IsLeapYear)
         break;
 }
 
+Console.WriteLine("-------------------------------------");
+Console.WriteLine("-------------------------------------");
+
+Console.WriteLine("Random Number");
+Console.WriteLine("-------------------------------------");
+
+Random rand = new Random();
+int RandomNumber = rand.Next(1, 11);
+
+Console.WriteLine("I have chosen a number between 1 and 10.");
+
+Console.Write("Enter your guess: ");
+int guess = int.Parse(Console.ReadLine());
+
+if (guess == RandomNumber)
+{
+    Console.WriteLine("Congratulations! You guessed the correct number.");
+}
+else
+{
+    Console.WriteLine("Wrong guess.");
+    Console.WriteLine("The correct number was: " + RandomNumber);
+}
