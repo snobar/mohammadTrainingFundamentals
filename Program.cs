@@ -30,3 +30,26 @@ else
 {
     Console.WriteLine("Invalid Mark");
 }
+
+
+Console.WriteLine("-------------------------------------");
+Console.WriteLine("-------------------------------------");
+
+
+Console.WriteLine("Leap Year");
+Console.WriteLine("-------------------------------------");
+Console.Write("Enter student Mark: ");
+short Year = short.Parse(Console.ReadLine());
+
+bool IsLeapYear = (Year % 400 == 0) ? true :  (Year % 100 == 0) ? false :  (Year % 4 == 0) ? true : false;
+
+switch(IsLeapYear)
+{
+    case true:
+        Console.WriteLine( "Yes, Year [" + Year + "] is a leap year");
+        break;
+    case false:
+        Console.WriteLine("No, Year [" + Year + "] is NOT a leap year");
+        break;
+}
+
