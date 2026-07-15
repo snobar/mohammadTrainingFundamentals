@@ -52,3 +52,21 @@ for (int i = 1; i <= Number; i++)
         Console.WriteLine(i);
     }
 }
+
+
+Console.WriteLine("Sum & Length Digits ");
+Console.WriteLine("-------------------------------------");
+
+Console.Write("Enter The Number: ");
+int Number1 = int.Parse(Console.ReadLine());
+short Length = 0;
+int Sum = 0;
+while (Number1 > 0)
+
+{
+    Sum += Number1 % 10;
+    Number1 /= 10;
+    ++Length;
+}
+Console.WriteLine("Sum of Digits = " + Sum);
+Console.WriteLine("Length of Digits = " + Length);
