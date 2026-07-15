@@ -1,4 +1,4 @@
-﻿Console.WriteLine("\t\t\t\tMultiplication_1_TO_10");
+﻿/*Console.WriteLine("\t\t\t\tMultiplication_1_TO_10");
 
 for (int P_Head = 1; P_Head <= 10; ++P_Head)
 {
@@ -21,4 +21,34 @@ for (int i = 1; i <= 10; i++)
 
     Console.WriteLine();
 }
+*/
 
+Console.WriteLine("Prime Number");
+Console.WriteLine("-------------------------------------");
+
+Console.Write("Enter The Number: ");
+int Number = int.Parse(Console.ReadLine());
+
+for (int i = 1; i <= Number; i++)
+{
+    bool IsPrime = true;
+
+    if (i <= 1)
+        IsPrime = false;
+
+    int M = (int)Math.Round(i / 2.0);
+
+    for (int count = 2; count <= M; count++)
+    {
+        if (i % count == 0)
+        {
+            IsPrime = false;
+            break;
+        }
+    }
+
+    if (IsPrime)
+    {
+        Console.WriteLine(i);
+    }
+}
