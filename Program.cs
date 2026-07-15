@@ -1,4 +1,4 @@
-﻿/*Console.WriteLine("\t\t\t\tMultiplication_1_TO_10");
+﻿Console.WriteLine("\t\t\t\tMultiplication_1_TO_10");
 
 for (int P_Head = 1; P_Head <= 10; ++P_Head)
 {
@@ -70,7 +70,7 @@ while (Number1 > 0)
 }
 Console.WriteLine("Sum of Digits = " + Sum);
 Console.WriteLine("Length of Digits = " + Length);
-*/
+
 Console.WriteLine("Draw Stars");
 Console.WriteLine("-------------------------------------");
 Console.Write("Enter The Rows: ");
