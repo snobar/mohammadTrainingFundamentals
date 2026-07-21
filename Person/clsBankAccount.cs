@@ -4,12 +4,12 @@ using System.Text;
 
 namespace mohammadTrainingFundamentals.Person
 {
-    public class clsBankAccount: clsPerson
+    public class clsBankAccount
     {
      private string _AccountNumber;
      private string _PinCode;
      private float _AccountBalance;
-
+        private readonly clsPerson _person;
         public string AccountNumber
         {
             get
@@ -37,10 +37,9 @@ namespace mohammadTrainingFundamentals.Person
                 return _AccountBalance;
             }
         }
-        public clsBankAccount ( string FirstName, string LastName, string Email, string Phone, string AccountNumber, string PinCode, float AccountBalance) :
-            base(FirstName, LastName, Email, Phone)
+        public clsBankAccount (clsPerson person, string AccountNumber, string PinCode, float AccountBalance)
         {
-            
+            _person = person;
             _AccountNumber = AccountNumber;
             _PinCode = PinCode;
             if (AccountBalance < 0)
@@ -53,11 +52,11 @@ namespace mohammadTrainingFundamentals.Person
         {
             Console.WriteLine("Info:");
             Console.WriteLine("___________________");
-            Console.WriteLine("FirstName: " + FirstName);
-            Console.WriteLine("LastName : " + LastName);
-            Console.WriteLine("Full Name: " + FullName());
-            Console.WriteLine("Email    : " + Email);
-            Console.WriteLine("Phone    : " + Phone);
+            Console.WriteLine("FirstName: " + _person.FirstName);
+            Console.WriteLine("LastName : " + _person.LastName);
+            Console.WriteLine("Full Name: " + _person.FullName());
+            Console.WriteLine("Email    : " + _person.Email);
+            Console.WriteLine("Phone    : " + _person.Phone);
             Console.WriteLine("AccountNumber: " + _AccountNumber);
             Console.WriteLine("PinCode    : " + _PinCode);
             Console.WriteLine("AccountBalance    : " + _AccountBalance);

@@ -6,18 +6,12 @@ namespace mohammadTrainingFundamentals.Person
 {
     public class clsPerson
     {
-        private String _FirstName;
-        private String _LastName;
-        private String _Email;
-        private String _Phone;
+        private string _FirstName;
+        private string _LastName = string.Empty;
+        private string _Email = string.Empty;
+        private string _Phone = string.Empty;
 
-       public clsPerson() 
-        {
-            _FirstName="";
-            _LastName="";
-            _Email="";
-            _Phone="";
-        }
+
         public clsPerson(string FirstName, string LastName, string Email, string Phone)
         {
             _FirstName = FirstName;
@@ -32,10 +26,7 @@ namespace mohammadTrainingFundamentals.Person
             {
                 return _FirstName;
             }
-            set
-            {
-                _FirstName = value;
-            }
+           
         }
 
         public string LastName
@@ -44,10 +35,7 @@ namespace mohammadTrainingFundamentals.Person
             {
                 return _LastName;
             }
-            set
-            {
-                _LastName = value;
-            }
+           
         }
 
         public string Email
